@@ -860,8 +860,7 @@ type SecretVolumeSource struct {
 //
 // The contents of the target Secret's Data field will be presented in a
 // projected volume as files using the keys in the Data field as the file names.
-// Note that this is identical to a secret volume source without the default
-// mode.
+// Note that this is similar to a secret volume source.
 type SecretProjection struct {
 	LocalObjectReference
 	// If unspecified, each key-value pair in the Data field of the referenced
